@@ -207,17 +207,21 @@ var formSubmitHandler = function(event) {
   city = cityEl.value.trim().toLowerCase();
   // console.log(city);
 
-  localStorage.setItem('weather-'+cityFull, cityFull);
+  if (city !== "" && city !== null) {
+    localStorage.setItem('weather-'+cityFull, cityFull);
 
-  var searchHistory = document.createElement("li");
-  searchHistory.textContent = cityFull;
-  searchHistory.classList = "search-item";
-  searchHistory.setAttribute("data-city", cityFull);
-  searchUlEl.appendChild(searchHistory);
-  
-  cityEl.textContent = "";
+    var searchHistory = document.createElement("li");
+    searchHistory.textContent = cityFull;
+    searchHistory.classList = "search-item";
+    searchHistory.setAttribute("data-city", cityFull);
+    searchUlEl.appendChild(searchHistory);
+    
+    cityEl.textContent = "";
 
-  apiFetch(city, cityFull);
+    apiFetch(city, cityFull);
+  } else {
+    alert("Please enter a city name");
+  }
 
 };
 
