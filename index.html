@@ -28,59 +28,66 @@
         </form>
         <div class="search-history-block">
           <ul class="search-ul">
-            <li class="search-item">Boston</li>
-            <li class="search-item">San Francisco</li>
+            <!-- <li class="search-item">Boston</li>
+            <li class="search-item">San Francisco</li> -->
           </ul>
         </div>
     </section>
 
     <section class="col-right child">
       <div class="top-right-block">
-        <h2 class="temp-text" id="city-text">Atlanta (8/15/2019) <span class="oi oi-cloud"></span></h2>
+        <h2 class="temp-text" id="city-text"><span class="oi oi-cloud"></span></h2>
         <div class="text-data">
-          <p class="temp-text">Temperature: 90.9 °F</p>
-          <p class="temp-text">Humidity: 41%</p>
-          <p class="temp-text">Wind Speed: 4.7 MPH</p>
-          <p class="temp-text">UX Index: <span id="uv">9.49</span></p>
+          <p class="temp-text">Temperature: <span id="current-temp">90.9</span>°F</p>
+          <p class="temp-text">Humidity: <span id="current-humidity">41</span>%</p>
+          <p class="temp-text">Wind Speed: <span id="current-wind">4.7</span> MPH</p>
+          <p class="temp-text">UV Index: <span class="current-uv">9.49</span></p>
         </div>
       </div>
       <div class="bottom-right-block">
         <h2>5-Day Forecast:</h2>
         <div class="block-days">
           <div class="days" id="day1">
-            <h3>8/16/2019</h3>
-            <span class="oi oi-cloud fore-sign"></span>
-            <p class="temp" id="temp1">Temp: 86.84 °F</p>
-            <p class="humidity" id="humidity1">Humidity: 43%</p>
+            <h3 id="dt-1">8/16/2019</h3>
+            <!-- <span class="oi oi-cloud fore-sign"></span> -->
+            <span id="weather1"></span>
+            <p class="temp">Temp: <span id="temp1"></span>°F</p>
+            <p class="humidity">Humidity: <span id="humidity1"></span>%</p>
           </div>
           <div class="days" id="day2">
-            <h3>8/17/2019</h3>
-            <span class="oi oi-cloud fore-sign"></span>
-            <p class="temp" id="temp2">Temp: 86.84 °F</p>
-            <p class="humidity" id="humidity2">Humidity: 43%</p>
+            <h3 id="dt-2">8/17/2019</h3>
+            <!-- <span class="oi oi-cloud fore-sign"></span> -->
+            <span id="weather2"></span>
+            <p class="temp">Temp: <span id="temp2"></span>°F</p>
+            <p class="humidity">Humidity: <span id="humidity2"></span>%</p>
           </div>
           <div class="days" id="day3">
-            <h3>8/18/2019</h3>
-            <span class="oi oi-cloud fore-sign"></span>
-            <p class="temp" id="temp3">Temp: 86.84 °F</p>
-            <p class="humidity" id="humidity3">Humidity: 43%</p>
+            <h3 id="dt-3">8/18/2019</h3>
+            <!-- <span class="oi oi-cloud fore-sign"></span> -->
+            <span id="weather3"></span>
+            <p class="temp">Temp: <span id="temp3"></span>°F</p>
+            <p class="humidity">Humidity: <span id="humidity3"></span>%</p>
           </div>
           <div class="days" id="day4">
-            <h3>8/19/2019</h3>
-            <span class="oi oi-cloud fore-sign"></span>
-            <p class="temp" id="temp4">Temp: 86.84 °F</p>
-            <p class="humidity" id="humidity4">Humidity: 43%</p>
+            <h3 id="dt-4">8/19/2019</h3>
+            <!-- <span class="oi oi-cloud fore-sign"></span> -->
+            <span id="weather4"></span>
+            <p class="temp">Temp: <span id=temp4></span>°F</p>
+            <p class="humidity">Humidity: <span id="humidity4"></span>%</p>
           </div>
           <div class="days" id="day5">
-            <h3>8/20/2019</h3>
-            <span class="oi oi-cloud fore-sign"></span>
-            <p class="temp" id="temp5">Temp: 86.84 °F</p>
-            <p class="humidity" id="humidity5">Humidity: 43%</p>
+            <h3 id="dt-5">8/20/2019</h3>
+            <!-- <span class="oi oi-cloud fore-sign"></span> -->
+            <span id="weather5"></span>
+            <p class="temp">Temp: <span id="temp5"></span>°F</p>
+            <p class="humidity">Humidity: <span id="humidity5"></span>%</p>
           </div>
         </div>
       </div>
     </section>
   </div>
-        
+  
+  <script src="./assets/js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 </body>
 </html>
