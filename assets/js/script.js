@@ -34,7 +34,7 @@ var weather5El = document.querySelector("#weather5");
 var apiFetch = function(city, cityFull) {
 
   apiKey = 'a7c5bebcb6d32bd1474a556f3d05e3bc';
-  apiUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial&appid=${apiKey}`;
+  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial&appid=${apiKey}`;
 
   // Current Weather Data -- grabbing lat & long
   fetch(apiUrl)
@@ -198,9 +198,7 @@ var apiFetch = function(city, cityFull) {
     };
   });
 
-  
 };
-
 
 var formSubmitHandler = function(event) {
   event.preventDefault();
