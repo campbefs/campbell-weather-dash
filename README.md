@@ -8,4 +8,4 @@
 
  Deployed application can be found at: https://campbefs.github.io/campbell-weather-dash/
 
-  ![alt text](assets/img/weather-dash.JPG "Live Application Screenshot")
+  ![alt text](assets/images/weather-dash.JPG "Live Application Screenshot")
